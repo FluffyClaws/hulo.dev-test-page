@@ -1,17 +1,8 @@
 import React, { useState } from "react";
 import "./Header.scss";
+import ChatButton from "../MiscElements/ChatButton";
 
 const HeaderMenu: React.FC = () => {
-  const [isHovered, setIsHovered] = useState(false);
-
-  const handleMouseEnter = () => {
-    setIsHovered(true);
-  };
-
-  const handleMouseLeave = () => {
-    setIsHovered(false);
-  };
-
   return (
     <header className="header">
       <div className="header-group">
@@ -35,28 +26,7 @@ const HeaderMenu: React.FC = () => {
               src="/antdesigninstagramoutlined.svg"
             />
           </button>
-          <div
-            className="button"
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <div className="chat-button-wrapper">
-              <button className="chat-button">
-                <span className="button-content">LET'S CHAT</span>
-              </button>
-            </div>
-            <div className="icon-parent">
-              <div className="button-frame-wrapper">
-                <img
-                  className={`icon ${isHovered ? "icon-hovered" : ""}`}
-                  loading="lazy"
-                  alt=""
-                  src={isHovered ? "/arrow-icon.png" : "/circle.svg"}
-                />
-              </div>
-              <div className={`icon1 ${isHovered ? "hovered" : ""}`} />
-            </div>
-          </div>
+          <ChatButton buttonText="LET'S CHAT" />{" "}
         </div>
       </div>
       <img
