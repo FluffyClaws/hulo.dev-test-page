@@ -9,12 +9,28 @@
   width: 1751px;
   top: calc(50% - 1166.5px);
   right: -36px;
+  transition: filter 0.3s ease;
+  filter: none;
+}
+.card:hover .view-wrapper,
+.card:hover .feature-banner-pop {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.card:hover .featured-banner {
+  filter: blur(40px);
+}
+.view-wrapper,
+.feature-banner-pop {
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 .feature-banner-pop {
   height: 650.7px;
   width: 487px;
   right: 596px;
-  bottom: -681.7px;
   overflow: hidden;
   flex-shrink: 0;
   z-index: 1;
@@ -37,6 +53,7 @@
 }
 
 .view-wrapper {
+  margin-top: 250px;
   height: 26px;
   width: 1055px;
   display: flex;
@@ -48,6 +65,9 @@
   max-width: 100%;
   text-align: left;
   color: var(--baseline-white);
+  transform: translateY(20px);
+  opacity: 0;
+  transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 .view-wrapper h1 {
