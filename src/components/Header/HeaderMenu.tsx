@@ -29,12 +29,7 @@ const HeaderMenu: React.FC = () => {
           <ChatButton buttonText="LET'S CHAT" />{" "}
         </div>
       </div>
-      <img
-        className="header-child"
-        loading="lazy"
-        alt=""
-        src="/vector-34.svg"
-      />
+      <div className="br-line"></div>
     </header>
   );
 };

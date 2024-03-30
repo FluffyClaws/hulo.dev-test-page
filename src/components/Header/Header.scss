@@ -109,10 +109,9 @@
   max-width: 100%;
 }
 
-.header-child {
+.br-line {
   width: 1680px;
-  height: 0;
-  border: 1px solid #1d201f;
+  border-bottom: 1px solid var(--baseline-dark);
 }
 
 .header {
