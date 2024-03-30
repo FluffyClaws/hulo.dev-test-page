@@ -4,7 +4,7 @@ import ChatButton from "../MiscElements/ChatButton";
 
 const HeaderBanner = () => {
   return (
-    <div>
+    <div className="banner-container">
       <div className="banner-frame">
         <div className="frame-parent1">
           <div className="frame-parent2">
@@ -35,13 +35,12 @@ const HeaderBanner = () => {
           <div className="br-line"></div>
         </div>
       </div>
-      {/* <div className="background-paper">
-        <img
-          className="background-paper"
-          alt=""
-          src="/texturelabs-paper-220m-1-traced.svg"
-        />
-      </div> */}
+      <div className="background-paper-wraper"></div>
+      <img
+        className="background-paper"
+        alt=""
+        src="/texturelabs-paper-220m-1-traced.svg"
+      />
     </div>
   );
 };

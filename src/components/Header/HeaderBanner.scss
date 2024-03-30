@@ -187,15 +187,33 @@
   box-sizing: border-box;
   max-width: 100%;
 }
-// .texturelabs-paper-220m-1-trac1 {
-//   margin-left: -135px;
-//   width: 2191px;
-//   height: 377px;
-//   position: relative;
-//   flex-shrink: 0;
-//   margin-top: -145px;
-// }
-// .background-paper {
-//   z-index: -1;
-//   background-color: var(--baseline-bg);
-// }
+.texturelabs-paper-220m-1-trac1 {
+  position: relative;
+  margin-left: -135px;
+  width: 2191px;
+  height: 377px;
+  position: relative;
+  flex-shrink: 0;
+  margin-top: -145px;
+  z-index: -1;
+}
+.background-paper {
+  position: absolute;
+  margin-left: -135px;
+  width: 2191px;
+  height: 377px;
+  z-index: -1;
+  bottom: 130px;
+  z-index: 2;
+  background: linear-gradient(to bottom, #fff 49.9%, #f0f0f0 50%);
+}
+.banner-container {
+  position: relative;
+  z-index: 1;
+  height: 1178px;
+  //   overflow: hidden;
+  clip-path: inset(0);
+}
+.background-paper-wraper {
+  max-width: 1920px;
+}
