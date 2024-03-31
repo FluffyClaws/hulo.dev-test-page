@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./ProcessCard.scss";
 import ChatButton from "./ChatButton";
 
@@ -15,6 +15,14 @@ const ProcessCard: React.FC<ProcessProps> = ({
   subHeadline,
   description,
 }) => {
+  const [isCollapsed, setIsCollapsed] = useState(false);
+
+  const [isRotated, setIsRotated] = useState(false);
+
+  const toggleCollapse = () => {
+    setIsCollapsed(!isCollapsed);
+    setIsRotated(!isRotated);
+  };
   return (
     <div className="process-card">
       <div className="process-card-wrapper">
@@ -24,13 +32,16 @@ const ProcessCard: React.FC<ProcessProps> = ({
             <p>{headline}</p>
             <p>{subHeadline}</p>
           </div>
-          <div className="process-desc">
+          <div className={`process-desc ${isCollapsed ? "collapsed" : ""}`}>
             <p>{description}</p>
             <ChatButton buttonText="TRY OUT OUR TEAM" width="165px" />
           </div>
         </div>
-        <button className="ham-menu">
-          <img src="/ham-menu.svg" alt="" />
+        <button
+          className={`ham-menu ${isRotated ? "rotated" : ""}`}
+          onClick={toggleCollapse}
+        >
+          <img src="/ham-menu-dots.svg" alt="" />
         </button>
       </div>
     </div>

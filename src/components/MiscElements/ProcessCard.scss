@@ -75,6 +75,13 @@
   background-color: var(--baseline-bg);
   padding: var(--padding-13xl);
   gap: var(--gap-45xl);
+  transition: max-height 0.5s, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out, padding-top 0.5s ease-in-out,
+    padding-bottom 0.5s ease-in-out;
+  overflow: hidden;
+  max-height: 483px; /* adjusted to your content's natural max height */
+  opacity: 1;
+  visibility: visible;
 }
 .content-wrapper {
   flex: 1;
@@ -84,8 +91,55 @@
   color: var(--baseline-darck);
 }
 .ham-menu {
-  background: none;
+  height: 48px;
+  width: 48px;
+  background: var(--color-orangered);
   outline: none;
   border: none;
+  border-radius: 50%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative;
+  transition: transform 0.25s ease;
+}
+.ham-menu.rotated {
+  transform: rotate(90deg);
+}
+
+.ham-menu img {
+  display: block;
+  transition: transform 0.25s ease;
+  position: relative;
+  z-index: 1;
+}
+.ham-menu::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--baseline-dark);
+  border-radius: inherit;
+  clip-path: inset(0% round 50%);
+  transition: clip-path 0.5s ease-out;
+  z-index: 0;
+}
+
+.ham-menu.rotated::before {
+  clip-path: inset(50% round 50%);
+}
+
+.process-desc.collapsed {
+  max-height: 0;
+  opacity: 0;
+  visibility: hidden;
+  padding-top: 0;
+  padding-bottom: 0;
+  transition: max-height 0.5s, opacity 0.5s ease-in-out,
+    visibility 0.5s ease-in-out, padding-top 0.5s ease-in-out,
+    padding-bottom 0.5s ease-in-out;
 }

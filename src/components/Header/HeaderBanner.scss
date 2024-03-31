@@ -205,7 +205,11 @@
   z-index: -1;
   bottom: 130px;
   z-index: 2;
-  background: linear-gradient(to bottom, #fff 49.9%, #f0f0f0 50%);
+  background: linear-gradient(
+    to bottom,
+    var(--baseline-white) 49.9%,
+    var(--baseline-bg-alt) 50%
+  );
 }
 .banner-container {
   position: relative;

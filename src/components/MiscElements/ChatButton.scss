@@ -154,6 +154,8 @@
 }
 
 .button {
+  display: flex;
+  flex-direction: row;
   font-size: var(--button-size);
   flex: 1;
   border-radius: var(--br-21xl);
