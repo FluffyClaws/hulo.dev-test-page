@@ -5,6 +5,7 @@ import HeaderBanner from "./components/Header/HeaderBanner";
 import FeaturedProject from "./components/FeaturedProject";
 import AboutSection from "./components/AboutSection";
 import HowWeWork from "./components/HowWeWork";
+import CardsSection from "./components/CardsSection";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <FeaturedProject />
       <AboutSection />
       <HowWeWork />
+      <CardsSection />
     </div>
   );
 }
