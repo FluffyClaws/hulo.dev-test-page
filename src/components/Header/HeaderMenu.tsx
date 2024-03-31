@@ -26,7 +26,7 @@ const HeaderMenu: React.FC = () => {
               src="/antdesigninstagramoutlined.svg"
             />
           </button>
-          <ChatButton buttonText="LET'S CHAT" />{" "}
+          <ChatButton buttonText="LET'S CHAT" width="150px" />
         </div>
       </div>
       <div className="br-line"></div>

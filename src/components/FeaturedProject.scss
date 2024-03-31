@@ -172,7 +172,6 @@
   line-height: 22px;
 }
 .featured-footer {
-  margin-top: 16px;
   display: flex;
   align-items: flex-start;
   box-sizing: border-box;
@@ -187,7 +186,7 @@
   width: 1537px;
   display: flex;
   flex-direction: row;
-  align-items: flex-start;
+  align-items: baseline;
   justify-content: space-between;
   max-width: 100%;
   gap: var(--gap-xl);
