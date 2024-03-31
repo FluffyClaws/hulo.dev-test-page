@@ -15,7 +15,7 @@ const AboutSection: React.FC = () => {
               alt=""
               src="/vector-39.svg"
             />
-            <h1 className="you-have-a-container">
+            <h1 className="about-head">
               <span>YOU HAVE </span>
               <i>a lot</i>
               <span> GOING ON.</span>
