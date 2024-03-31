@@ -33,7 +33,7 @@ const FeaturedProject: React.FC = (props) => {
             <div className="featured-project">Featured Project</div>
           </div>
           <div className="author">
-            <div className="kate-eckstein-design">Kate Eckstein Design</div>
+            <p>Kate Eckstein Design</p>
           </div>
           <div className="categories">
             Strategy, content, Design, development
