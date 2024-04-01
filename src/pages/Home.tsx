@@ -5,6 +5,7 @@ import HeaderBanner from "../components/Header/HeaderBanner";
 import HeaderMenu from "../components/Header/HeaderMenu";
 import Highlights from "../components/Highlights";
 import HowWeWork from "../components/HowWeWork";
+import Testimonials from "../components/MiscElements/Testimonials";
 import ProcessesSection from "../components/ProcessesSection";
 
 const Home: React.FC = () => {
@@ -18,6 +19,7 @@ const Home: React.FC = () => {
       <CardsSection />
       <ProcessesSection />
       <Highlights />
+      <Testimonials />
     </>
   );
 };
