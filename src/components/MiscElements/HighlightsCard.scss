@@ -1,0 +1,53 @@
+.highlight-card {
+  gap: var(--gap-5xl);
+  max-width: 100%;
+  text-align: left;
+  font-size: var(--caption-size);
+  color: var(--baseline-darck);
+  font-family: var(--button);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  &:hover .highlight-img {
+    transform: scale(1.3);
+  }
+}
+.highlight-card,
+.text-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.highlight-img,
+.text-wrapper p {
+  align-self: stretch;
+  position: relative;
+}
+.highlight-img {
+  height: 1079px;
+  border-radius: var(--br-5xs);
+  max-width: 100%;
+  overflow: hidden;
+  flex-shrink: 0;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  transform: scale(1);
+}
+.text-wrapper {
+  align-self: stretch;
+  gap: var(--gap-5xs);
+}
+.text-wrapper p {
+  letter-spacing: 0.4px;
+  line-height: 16px;
+  margin: 0;
+  text-transform: uppercase;
+}
+.text-wrapper :last-child {
+  font-size: var(--h5-size);
+  line-height: 34px;
+  text-transform: none;
+}
