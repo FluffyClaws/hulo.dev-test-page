@@ -1,0 +1,26 @@
+.cards-wrapper,
+.cards {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.cards-wrapper,
+.cards {
+  flex-direction: row;
+  max-width: 100%;
+}
+.cards {
+  width: 1920px;
+  flex-shrink: 0;
+  z-index: 4;
+}
+.cards-wrapper {
+  padding: 26px 0 0 0;
+  box-sizing: border-box;
+  text-align: center;
+  font-size: var(--h6-size);
+  color: var(--baseline-darck);
+  font-family: var(--button);
+  background: var(--baseline-bg);
+}
