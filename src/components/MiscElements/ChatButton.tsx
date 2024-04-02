@@ -4,19 +4,22 @@ import "./ChatButton.scss";
 interface ChatButtonProps {
   buttonText: string;
   width?: string;
+  parentHover?: boolean;
 }
 
-const ChatButton: React.FC<ChatButtonProps> = ({ buttonText, width }) => {
+const ChatButton: React.FC<ChatButtonProps> = ({
+  buttonText,
+  width,
+  parentHover,
+}) => {
   const [isHovered, setIsHovered] = useState(false);
 
-  const handleMouseEnter = () => setIsHovered(true);
-  const handleMouseLeave = () => setIsHovered(false);
-
+  const effectiveHover = parentHover !== undefined ? parentHover : isHovered;
   return (
     <div
       className="button"
-      onMouseEnter={handleMouseEnter}
-      onMouseLeave={handleMouseLeave}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       <div className="chat-button-wrapper" style={{ width }}>
         <button className="chat-button">
@@ -26,13 +29,13 @@ const ChatButton: React.FC<ChatButtonProps> = ({ buttonText, width }) => {
       <div className="icon-parent">
         <div className="button-frame-wrapper">
           <img
-            className={`icon ${isHovered ? "icon-hovered" : ""}`}
+            className={`icon ${effectiveHover ? "icon-hovered" : ""}`}
             loading="lazy"
             alt=""
-            src={isHovered ? "/arrow-icon.png" : "/circle.svg"}
+            src={effectiveHover ? "/arrow-icon.png" : "/circle.svg"}
           />
         </div>
-        <div className={`icon1 ${isHovered ? "hovered" : ""}`} />
+        <div className={`icon1 ${effectiveHover ? "hovered" : ""}`} />
       </div>
     </div>
   );

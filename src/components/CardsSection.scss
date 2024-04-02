@@ -15,12 +15,15 @@
   flex-shrink: 0;
   z-index: 4;
 }
+.cards :last-child {
+  border-right: none;
+}
 .cards-wrapper {
   padding: 26px 0 0 0;
   box-sizing: border-box;
   text-align: center;
   font-size: var(--h6-size);
-  color: var(--baseline-darck);
+  color: var(--baseline-dark);
   font-family: var(--button);
-  background: var(--baseline-bg);
+  background: var(--baseline-bg-alt);
 }

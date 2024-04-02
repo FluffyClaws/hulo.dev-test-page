@@ -167,7 +167,11 @@
   z-index: 3;
 }
 .featured-container {
-  background: linear-gradient(to bottom, #fff 49.9%, #f0f0f0 50%);
+  background: linear-gradient(
+    to bottom,
+    #fff 49.9%,
+    var(--baseline-bg-alt) 50%
+  );
   font-family: var(--button);
   line-height: 22px;
 }
