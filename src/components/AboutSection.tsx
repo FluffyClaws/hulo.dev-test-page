@@ -13,7 +13,7 @@ const AboutSection: React.FC = () => {
               className="about-circle"
               loading="lazy"
               alt=""
-              src="/vector-39.svg"
+              src="/hulo.dev-test-page/vector-39.svg"
             />
             <h1 className="about-head">
               <span>YOU HAVE </span>
@@ -28,7 +28,7 @@ const AboutSection: React.FC = () => {
         <div className="details-container">
           <div className="row1-wrapper">
             <div className="about">
-              <img src="/square.svg" alt="" />
+              <img src="/hulo.dev-test-page/square.svg" alt="" />
               <p>About us</p>
             </div>
             <div className="subhead">

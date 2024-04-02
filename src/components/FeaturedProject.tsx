@@ -6,11 +6,11 @@ const FeaturedProject: React.FC = (props) => {
     <div className="featured-container">
       <div className="card-wrapper">
         <div className="card">
-          <img className="featured-banner" alt="" src="/featured-banner.png" />
+          <img className="featured-banner" alt="" src="/hulo.dev-test-page/featured-banner.png" />
           <img
             className="feature-banner-pop"
             alt=""
-            src="/feature-banner-pop.png"
+            src="/hulo.dev-test-page/feature-banner-pop.png"
           />
           <div className="website">Website</div>
           <div className="view-wrapper">
@@ -27,7 +27,7 @@ const FeaturedProject: React.FC = (props) => {
                 className="star-icon"
                 loading="lazy"
                 alt=""
-                src="/star-1.svg"
+                src="/hulo.dev-test-page/star-1.svg"
               />
             </div>
             <div className="featured-project">Featured Project</div>

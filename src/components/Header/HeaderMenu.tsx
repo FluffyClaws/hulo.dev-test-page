@@ -23,7 +23,7 @@ const HeaderMenu: React.FC = () => {
               className="instagram-icon"
               loading="lazy"
               alt=""
-              src="/antdesigninstagramoutlined.svg"
+              src="/hulo.dev-test-page/antdesigninstagramoutlined.svg"
             />
           </button>
           <ChatButton buttonText="LET'S CHAT" width="150px" />

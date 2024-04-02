@@ -8,20 +8,20 @@ const Highlights = () => {
     <section className="highlights-container">
       <div className="highlights-wrapper">
         <HighlightsCard
-          imgSrc="img-3@2x.png"
+          imgSrc="/hulo.dev-test-page/img-3@2x.png"
           title="Strategy"
           subtitle="AER Media"
         />
         <div className="highlight-head-wrapper">
           <div className="headline-wrapper">
             <div className="category-wrapper">
-              <img className="star-icon" alt="" src="/star-1.svg" />
+              <img className="star-icon" alt="" src="/hulo.dev-test-page/star-1.svg" />
               <p>SELECTED WORK</p>
             </div>
             <h1>Sit nam egestas nullam nulla. Sed nisi arcu et blandit.</h1>
           </div>
           <HighlightsCard
-            imgSrc="img-4@2x.png"
+            imgSrc="/hulo.dev-test-page/img-4@2x.png"
             title="DESIGN"
             subtitle="Valerie Wheeler"
             imgWidth="538px"
@@ -30,14 +30,14 @@ const Highlights = () => {
         </div>
         <div className="highlights-row2">
           <HighlightsCard
-            imgSrc="img-5@2x.png"
+            imgSrc="/hulo.dev-test-page/img-5@2x.png"
             title="Strategy"
             subtitle="Luneer MGMT"
             imgHeight="569px"
             imgWidth="967px"
           />
           <HighlightsCard
-            imgSrc="img-6@2x.png"
+            imgSrc="/hulo.dev-test-page/img-6@2x.png"
             title="CONTENT"
             subtitle="Social Blue Print"
             imgHeight="425px"
@@ -47,7 +47,7 @@ const Highlights = () => {
         <div className="highlights-row3">
           <div className="left-wrapper">
             <HighlightsCard
-              imgSrc="img-7@2x.png"
+              imgSrc="/hulo.dev-test-page/img-7@2x.png"
               title="Strategy"
               subtitle="Luneer MGMT"
               imgHeight="425px"
@@ -62,14 +62,14 @@ const Highlights = () => {
             </div>
           </div>
           <HighlightsCard
-            imgSrc="img-8@2x.png"
+            imgSrc="/hulo.dev-test-page/img-8@2x.png"
             title="Strategy"
             subtitle="Luneer MGMT"
             imgHeight="425px"
             imgWidth=" 396px"
           />{" "}
           <HighlightsCard
-            imgSrc="img-9@2x.png"
+            imgSrc="/hulo.dev-test-page/img-9@2x.png"
             title="Strategy"
             subtitle="Luneer MGMT"
             imgHeight=" 853px"
