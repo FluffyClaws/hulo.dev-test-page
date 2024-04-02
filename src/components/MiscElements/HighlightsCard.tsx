@@ -23,12 +23,14 @@ const HighlightsCard: React.FC<HighlightsCardProps> = ({
 
   return (
     <div className="highlight-card">
-      <img
-        className="highlight-img"
-        alt={title}
-        src={imgSrc}
-        style={{ width: imgWidth, height: imgHeight }}
-      />
+      <div className="img-wrapper">
+        <img
+          className="highlight-img"
+          alt={title}
+          src={imgSrc}
+          style={{ width: imgWidth, height: imgHeight }}
+        />
+      </div>
       <div className="text-wrapper">
         <p>{title}</p>
         <p>{subtitle}</p>

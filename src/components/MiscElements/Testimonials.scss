@@ -1,0 +1,82 @@
+@import "slick-carousel/slick/slick.css";
+@import "slick-carousel/slick/slick-theme.css";
+.table-of-contents {
+  width: 12px;
+  height: 12px;
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+.testiomonial-icon {
+  height: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: var(--padding-7xs) 0 0;
+  box-sizing: border-box;
+}
+
+.testimonials-head {
+  width: 844px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0 var(--padding-xl) 0 0;
+  gap: var(--gap-base);
+  max-width: 100%;
+  align-items: center;
+}
+.testimonials-head p {
+  flex: 1;
+  position: relative;
+  letter-spacing: 0.15px;
+  line-height: 140%;
+  text-transform: uppercase;
+  display: inline-block;
+  min-width: 91px;
+  max-width: 100%;
+  margin: 0;
+  font-weight: 400;
+}
+.slider-wrapper,
+.testimonials-head {
+  flex-direction: row;
+  box-sizing: border-box;
+}
+.slider-wrapper {
+  display: flex;
+  gap: 175px;
+  width: 2850px;
+}
+
+.testimonials-container,
+.testimonials-head-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+.testimonials-head-wrapper {
+  width: 824px;
+  flex-direction: column;
+  gap: var(--gap-61xl);
+  flex-shrink: 0;
+}
+.testimonials-container {
+  align-self: stretch;
+  overflow: hidden;
+  flex-direction: row;
+  padding: var(--padding-101xl) 0 var(--padding-101xl) var(--padding-101xl);
+  box-sizing: border-box;
+  max-width: 100%;
+  z-index: 3;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--baseline-dark);
+  font-family: var(--button);
+  background-color: var(--baseline-bg-alt);
+}
+.slick-list {
+  overflow: visible;
+}
