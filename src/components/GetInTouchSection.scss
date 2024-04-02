@@ -40,6 +40,7 @@
   right: 36.1px;
 }
 .audit-headline {
+  font-weight: 400;
   margin: 0;
   flex: 1;
   position: relative;
@@ -198,7 +199,7 @@
   background: var(--baseline-bg-alt);
   align-self: stretch;
   justify-content: center;
-  padding: 0 var(--padding-xl);
+  padding: 0 var(--padding-xl) var(--padding-101xl);
   text-align: left;
   font-size: var(--font-size-base);
   color: var(--baseline-dark);

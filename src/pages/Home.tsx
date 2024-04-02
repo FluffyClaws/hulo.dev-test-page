@@ -1,6 +1,7 @@
 import AboutSection from "../components/AboutSection";
 import CardsSection from "../components/CardsSection";
 import FeaturedProject from "../components/FeaturedProject";
+import Footer from "../components/Footer";
 import GetInTouchSection from "../components/GetInTouchSection";
 import HeaderBanner from "../components/Header/HeaderBanner";
 import HeaderMenu from "../components/Header/HeaderMenu";
@@ -22,6 +23,7 @@ const Home: React.FC = () => {
       <Highlights />
       <Testimonials />
       <GetInTouchSection />
+      <Footer />
     </>
   );
 };

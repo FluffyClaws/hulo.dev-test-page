@@ -5,6 +5,11 @@ body {
   line-height: normal;
   background: var(--baseline-bg-alt);
 }
+p,
+h1,
+h3 {
+  color: var(--baseline-dark);
+}
 :root {
   /* fonts */
   --button: "Plus Jakarta Sans";
