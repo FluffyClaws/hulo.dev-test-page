@@ -41,7 +41,7 @@ const ProcessCard: React.FC<ProcessProps> = ({
           className={`ham-menu ${isRotated ? "rotated" : ""}`}
           onClick={toggleCollapse}
         >
-          <img src="/ham-menu-dots.svg" alt="" />
+          <img src="/hulo.dev-test-page/ham-menu-dots.svg" alt="" />
         </button>
       </div>
     </div>

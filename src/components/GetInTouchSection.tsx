@@ -9,11 +9,11 @@ const GetInTouchSection: React.FC = () => {
         <div className="left-col">
           <div className="left-col-wrapper">
             <div className="get-in-touch">
-              <img className="star-icon" alt="" src="/star-3.svg" />
+              <img className="star-icon" alt="" src="/hulo.dev-test-page/star-3.svg" />
               <p>Get in Touch</p>
             </div>
             <div className="get-in-touch-head">
-              <img className="touch-circle" alt="" src="/vector-39-2.svg" />
+              <img className="touch-circle" alt="" src="/hulo.dev-test-page/vector-39-2.svg" />
               <h1 className="audit-headline">
                 <span>SCHEDULE </span>
                 <i>a free</i>
@@ -36,7 +36,7 @@ const GetInTouchSection: React.FC = () => {
             </div>
           </div>
         </div>
-        <img className="get-in-touch-img" alt="" src="/img-10@2x.png" />
+        <img className="get-in-touch-img" alt="" src="/hulo.dev-test-page/img-10@2x.png" />
       </div>
     </div>
   );

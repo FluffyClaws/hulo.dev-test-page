@@ -16,11 +16,11 @@ const Footer = () => {
         <div className="footer-content-wrapper">
           <div className="footer-left-col">
             <div className="icon-wrapper">
-              <img className="contact-icon" alt="" src="/vector.svg" />
+              <img className="contact-icon" alt="" src="/hulo.dev-test-page/vector.svg" />
               <p>Contact Us</p>
             </div>
             <h1 className="left-col-text">
-              <img src="/vector-37.svg" alt="" className="contact-circle" />
+              <img src="/hulo.dev-test-page/vector-37.svg" alt="" className="contact-circle" />
               <span>LET’S WORK </span>
               <i>together</i>
             </h1>
@@ -52,7 +52,7 @@ const Footer = () => {
             <button onClick={scrollToTop} className="to-top">
               <p>Back to top</p>
               <div className="arrow-icon">
-                <img src="/arrow-up.svg" alt="" />
+                <img src="/hulo.dev-test-page/arrow-up.svg" alt="" />
               </div>
             </button>
           </div>

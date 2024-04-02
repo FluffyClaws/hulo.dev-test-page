@@ -7,13 +7,13 @@ const HowWeWork: React.FC = () => {
       <div className="work-wrapper">
         <div className="top-block-wrapper">
           <div className="head">
-            <img className="black-circle" src="/black-circle.svg" alt="" />
+            <img className="black-circle" src="/hulo.dev-test-page/black-circle.svg" alt="" />
             <p>HOW WE WORK</p>
           </div>
         </div>
         <div className="main-frame">
           <div className="main-frame-img ">
-            <img className="img-icon1" alt="" src="/img-1@2x.png" />
+            <img className="img-icon1" alt="" src="/hulo.dev-test-page/img-1@2x.png" />
           </div>
           <div className="main-frame-desc-container ">
             <h1 className="main-frame-desc-wrapper">
@@ -27,7 +27,7 @@ const HowWeWork: React.FC = () => {
                 <span> SUPPORT TO GROW.</span>
               </p>
             </h1>
-            <img className="work-circle" alt="" src="/vector-39-1.svg" />
+            <img className="work-circle" alt="" src="/hulo.dev-test-page/vector-39-1.svg" />
           </div>
         </div>
       </div>

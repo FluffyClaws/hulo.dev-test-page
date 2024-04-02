@@ -7,7 +7,7 @@ const ProcessesSection = () => {
     <section className="processes-section">
       <div className="processes-container">
         <div className="categorie-wrapper">
-          <img className="star" loading="lazy" alt="" src="/star-2.svg" />
+          <img className="star" loading="lazy" alt="" src="/hulo.dev-test-page/star-2.svg" />
           <div className="our-process">OUR PROCESS</div>
         </div>
         <div className="processes-cards-wrapper">

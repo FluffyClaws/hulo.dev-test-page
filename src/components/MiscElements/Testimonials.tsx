@@ -34,7 +34,7 @@ const Testimonials = () => {
           <img
             className="table-of-contents"
             alt=""
-            src="/oidoublequotesansleft.svg"
+            src="/hulo.dev-test-page/oidoublequotesansleft.svg"
           />
           <p>Testimonials</p>
         </div>

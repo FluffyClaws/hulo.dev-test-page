@@ -17,7 +17,7 @@ const TestemonialCard: React.FC<TestiomonialCardProps> = ({
         className="testimonial-card-bg"
         loading="lazy"
         alt=""
-        src="/group-3.svg"
+        src="/hulo.dev-test-page/group-3.svg"
       />
       <h1 className="testimonial-text">{testimonialText}</h1>
       <div className="testimonial-author">

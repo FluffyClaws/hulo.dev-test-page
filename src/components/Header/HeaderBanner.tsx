@@ -39,7 +39,7 @@ const HeaderBanner = () => {
       <img
         className="background-paper"
         alt=""
-        src="/texturelabs-paper-220m-1-traced.svg"
+        src="/hulo.dev-test-page/texturelabs-paper-220m-1-traced.svg"
       />
     </div>
   );
