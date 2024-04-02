@@ -13,7 +13,7 @@ const HeaderBanner = () => {
                 <div className="description">
                   a full-service design & marketing agency.
                 </div>
-                <ChatButton buttonText="talk to an expert" />
+                <ChatButton buttonText="talk to an expert" width="150px" />
               </div>
             </div>
             <div className="main-banner">

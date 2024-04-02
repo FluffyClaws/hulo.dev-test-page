@@ -3,9 +3,10 @@ import "./ChatButton.scss";
 
 interface ChatButtonProps {
   buttonText: string;
+  width?: string;
 }
 
-const ChatButton: React.FC<ChatButtonProps> = ({ buttonText }) => {
+const ChatButton: React.FC<ChatButtonProps> = ({ buttonText, width }) => {
   const [isHovered, setIsHovered] = useState(false);
 
   const handleMouseEnter = () => setIsHovered(true);
@@ -17,7 +18,7 @@ const ChatButton: React.FC<ChatButtonProps> = ({ buttonText }) => {
       onMouseEnter={handleMouseEnter}
       onMouseLeave={handleMouseLeave}
     >
-      <div className="chat-button-wrapper">
+      <div className="chat-button-wrapper" style={{ width }}>
         <button className="chat-button">
           <span className="button-content">{buttonText}</span>
         </button>
