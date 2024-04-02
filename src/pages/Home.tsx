@@ -1,6 +1,7 @@
 import AboutSection from "../components/AboutSection";
 import CardsSection from "../components/CardsSection";
 import FeaturedProject from "../components/FeaturedProject";
+import GetInTouchSection from "../components/GetInTouchSection";
 import HeaderBanner from "../components/Header/HeaderBanner";
 import HeaderMenu from "../components/Header/HeaderMenu";
 import Highlights from "../components/Highlights";
@@ -20,6 +21,7 @@ const Home: React.FC = () => {
       <ProcessesSection />
       <Highlights />
       <Testimonials />
+      <GetInTouchSection />
     </>
   );
 };
