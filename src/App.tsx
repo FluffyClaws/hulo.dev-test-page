@@ -4,6 +4,7 @@ import HeaderMenu from "./components/Header/HeaderMenu";
 import HeaderBanner from "./components/Header/HeaderBanner";
 import FeaturedProject from "./components/FeaturedProject";
 import AboutSection from "./components/AboutSection";
+import HowWeWork from "./components/HowWeWork";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <HeaderBanner />
       <FeaturedProject />
       <AboutSection />
+      <HowWeWork />
     </div>
   );
 }
