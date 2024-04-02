@@ -3,6 +3,7 @@ import CardsSection from "../components/CardsSection";
 import FeaturedProject from "../components/FeaturedProject";
 import HeaderBanner from "../components/Header/HeaderBanner";
 import HeaderMenu from "../components/Header/HeaderMenu";
+import Highlights from "../components/Highlights";
 import HowWeWork from "../components/HowWeWork";
 import ProcessesSection from "../components/ProcessesSection";
 
@@ -16,6 +17,7 @@ const Home: React.FC = () => {
       <HowWeWork />
       <CardsSection />
       <ProcessesSection />
+      <Highlights />
     </>
   );
 };
