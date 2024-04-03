@@ -14,7 +14,7 @@ const Home: React.FC = () => {
   return (
     <>
       <HeaderMenu />
-      <HeaderBanner />
+      {/* <HeaderBanner />
       <FeaturedProject />
       <AboutSection />
       <HowWeWork />
@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       <Highlights />
       <Testimonials />
       <GetInTouchSection />
-      <Footer />
+      <Footer /> */}
     </>
   );
 };

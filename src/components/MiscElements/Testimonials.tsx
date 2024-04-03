@@ -49,7 +49,7 @@ const Testimonials = () => {
               }}
             >
               <TestemonialCard
-                authorPicSrc={`/frame-86${index % 2 === 0 ? "" : "-1"}@2x.png`}
+                authorPicSrc={`/hulo.dev-test-page/frame-86${index % 2 === 0 ? "" : "-1"}@2x.png`}
                 authorName={`– ${
                   index % 2 === 0
                     ? "Luna, Luna’s Asethetics"

@@ -3,3 +3,9 @@
   margin: auto;
   background-color: var(--baseline-white);
 }
+@media (max-width: 450px) {
+  .container {
+    width: 100%;
+    background: var(--baseline-white);
+  }
+}
