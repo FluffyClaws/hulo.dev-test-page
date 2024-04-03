@@ -21,10 +21,8 @@ const HeaderBanner = () => {
                 <div className="banner-row1">Check</div>
                 <div className="right-desc-wrapper">
                   <div className="right-desc-container">
-                    <p className="right-desc-content">
-                      Grow your business without adding more to your plate.{" "}
-                    </p>
-                    <i className="right-desc-content1">You deserve support.</i>
+                    <p>Grow your business without adding more to your plate.</p>
+                    <i>You deserve support.</i>
                   </div>
                 </div>
               </div>
@@ -35,12 +33,13 @@ const HeaderBanner = () => {
           <div className="br-line"></div>
         </div>
       </div>
-      <div className="background-paper-wraper"></div>
-      <img
-        className="background-paper"
-        alt=""
-        src="/hulo.dev-test-page/texturelabs-paper-220m-1-traced.svg"
-      />
+      <div className="background-paper-wraper">
+        <img
+          className="background-paper"
+          alt=""
+          src="/hulo.dev-test-page/texturelabs-paper-220m-1-traced.svg"
+        />
+      </div>
     </div>
   );
 };

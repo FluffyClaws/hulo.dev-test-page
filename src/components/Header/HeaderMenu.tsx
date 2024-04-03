@@ -23,6 +23,7 @@ const HeaderMenu: React.FC = () => {
             isMobileMenuVisible ? "mobile-menu-visible" : ""
           }`}
         >
+          <div className="br-line"></div>
           <div className="logo-wrapper">
             <a className="logo">PIPI-POOPOO</a>
           </div>
@@ -48,7 +49,6 @@ const HeaderMenu: React.FC = () => {
             <ChatButton buttonText="LET'S CHAT" width="150px" />
           </div>
         </div>
-        <div className="br-line"></div>
       </header>
     </>
   );
