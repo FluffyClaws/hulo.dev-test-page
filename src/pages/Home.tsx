@@ -18,8 +18,8 @@ const Home: React.FC = () => {
       <FeaturedProject />
       <AboutSection />
       <HowWeWork />
-      {/* <CardsSection />
-      <ProcessesSection />
+      <CardsSection />
+      {/* <ProcessesSection />
       <Highlights />
       <Testimonials />
       <GetInTouchSection />
