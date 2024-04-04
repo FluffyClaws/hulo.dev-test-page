@@ -1,12 +1,3 @@
-.process-card-wrapper {
-  align-self: stretch;
-  border-bottom: 1px solid var(--baseline-darck);
-  box-sizing: border-box;
-  flex-direction: row;
-  justify-content: flex-start;
-  padding: 0 0 var(--padding-29xl);
-  gap: var(--gap-13xl);
-}
 .process-card {
   width: 1109px;
   flex-direction: column;
@@ -15,59 +6,50 @@
   font-size: var(--h5-size);
   color: var(--baseline-dark);
   border-bottom: 1px solid var(--baseline-dark);
-}
-.process-card,
-.process-card-wrapper {
-  display: flex;
-  align-items: flex-start;
-  max-width: 100%;
-}
-.card-num {
-  width: 110px;
-  position: relative;
-  line-height: 34px;
-  display: inline-block;
-  flex-shrink: 0;
-  color: var(--color-orangered);
-}
+  .process-card-wrapper {
+    align-self: stretch;
+    border-bottom: 1px solid var(--baseline-darck);
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 0 0 var(--padding-29xl);
+    gap: var(--gap-13xl);
+    .card-num {
+      width: 110px;
+      position: relative;
+      line-height: 34px;
+      display: inline-block;
+      flex-shrink: 0;
+      color: var(--color-orangered);
+    }
+    .content-wrapper {
+      flex: 1;
+      gap: var(--gap-13xl);
+      min-width: 577px;
+      max-width: 100%;
+      color: var(--baseline-darck);
 
-.content-headline :last-child {
-  font-size: var(--h3-size);
-  line-height: 120%;
-}
-
-.content-headline {
-  align-self: stretch;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-13xl);
-  font-weight: 400;
-}
-.content-headline p {
-  align-self: stretch;
-  position: relative;
-  line-height: 34px;
-  margin: 0;
-}
-.process-desc p {
-  align-self: stretch;
-  position: relative;
-  line-height: 140%;
-  margin: 0;
-}
-
-.process-desc,
-.content-wrapper {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-.process-desc,
-.content-wrapper {
-  flex-direction: column;
+      .content-headline {
+        align-self: stretch;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        gap: var(--gap-13xl);
+        font-weight: 400;
+        p {
+          align-self: stretch;
+          position: relative;
+          line-height: 34px;
+          margin: 0;
+        }
+      }
+      .content-headline :last-child {
+        font-size: var(--h3-size);
+        line-height: 120%;
+      }
+    }
+  }
 }
 .process-desc {
   align-self: stretch;
@@ -79,17 +61,35 @@
     visibility 0.5s ease-in-out, padding-top 0.5s ease-in-out,
     padding-bottom 0.5s ease-in-out;
   overflow: hidden;
-  max-height: 483px; /* adjusted to your content's natural max height */
+  max-height: 483px;
   opacity: 1;
   visibility: visible;
 }
-.content-wrapper {
-  flex: 1;
-  gap: var(--gap-13xl);
-  min-width: 577px;
-  max-width: 100%;
-  color: var(--baseline-darck);
+.process-desc p {
+  align-self: stretch;
+  position: relative;
+  line-height: 140%;
+  margin: 0;
 }
+.process-card,
+.process-card-wrapper {
+  display: flex;
+  align-items: flex-start;
+  max-width: 100%;
+}
+
+.process-desc,
+.content-wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.process-desc,
+.content-wrapper {
+  flex-direction: column;
+}
+
 .ham-menu {
   height: 48px;
   width: 48px;
@@ -142,4 +142,52 @@
   transition: max-height 0.5s, opacity 0.5s ease-in-out,
     visibility 0.5s ease-in-out, padding-top 0.5s ease-in-out,
     padding-bottom 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 450px) {
+  .process-card {
+    width: 100%;
+    flex-wrap: wrap;
+    .process-card-wrapper {
+      flex-direction: row;
+      padding: 0 20px;
+      gap: 20px;
+      .ham-menu {
+        width: 24px;
+        height: 24px;
+        margin-top: 5px;
+        img {
+          transform: scale(-0.5);
+        }
+      }
+      .card-num {
+        width: 15px;
+      }
+    }
+    .content-wrapper {
+      width: 100%;
+      min-width: auto !important;
+      gap: 20px !important;
+      padding: 0 0 20px;
+      .content-headline {
+        gap: 16px !important;
+        font-size: 16px;
+        p {
+          order: -1;
+        }
+      }
+      .content-headline :last-child {
+        font-size: 24px !important;
+      }
+    }
+  }
+  .process-desc {
+    font-size: 16px;
+    gap: 20px;
+    align-items: center;
+    padding: 16px;
+    p {
+      text-align: center;
+    }
+  }
 }
