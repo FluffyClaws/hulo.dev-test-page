@@ -60,6 +60,15 @@
   width: 2850px;
   .slick-list {
     overflow: visible !important;
+    .slick-slide {
+      transition: opacity 0.4s ease;
+      opacity: 0.4;
+      &.slick-current,
+      .slick-active {
+        opacity: 1;
+        transition: opacity 0.4s ease; // Ensure transition applies when becoming active
+      }
+    }
   }
 }
 

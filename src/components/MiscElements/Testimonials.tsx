@@ -23,6 +23,7 @@ const Testimonials = () => {
     afterChange: (index: number) => {
       console.log("Slider Changed to: ", index);
     },
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 450,
