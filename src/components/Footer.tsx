@@ -16,14 +16,22 @@ const Footer = () => {
         <div className="footer-content-wrapper">
           <div className="footer-left-col">
             <div className="icon-wrapper">
-              <img className="contact-icon" alt="" src="/hulo.dev-test-page/vector.svg" />
+              <img
+                className="contact-icon"
+                alt=""
+                src="/hulo.dev-test-page/vector.svg"
+              />
               <p>Contact Us</p>
             </div>
-            <h1 className="left-col-text">
-              <img src="/hulo.dev-test-page/vector-37.svg" alt="" className="contact-circle" />
+            <div className="left-col-text">
+              <img
+                src="/hulo.dev-test-page/vector-37.svg"
+                alt=""
+                className="contact-circle"
+              />
               <span>LET’S WORK </span>
               <i>together</i>
-            </h1>
+            </div>
             <ChatButton width="165px" buttonText="contat us" />
           </div>
           <div className="footer-right-col">

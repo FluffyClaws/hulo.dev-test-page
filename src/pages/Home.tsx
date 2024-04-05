@@ -23,7 +23,7 @@ const Home: React.FC = () => {
       <Highlights />
       <Testimonials />
       <GetInTouchSection />
-      {/* <Footer /> */}
+      <Footer />
     </>
   );
 };
