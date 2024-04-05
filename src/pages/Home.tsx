@@ -20,8 +20,8 @@ const Home: React.FC = () => {
       <HowWeWork />
       <CardsSection />
       <ProcessesSection />
-      {/* <Highlights />
-      <Testimonials />
+      <Highlights />
+      {/* <Testimonials />
       <GetInTouchSection />
       <Footer /> */}
     </>
