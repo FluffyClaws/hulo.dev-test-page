@@ -1,200 +1,3 @@
-.star-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  box-sizing: border-box;
-  width: 12px;
-  height: 12px;
-  position: relative;
-}
-.get-in-touch p {
-  margin: 0;
-  flex: 1;
-  position: relative;
-  letter-spacing: 0.15px;
-  line-height: 140%;
-  text-transform: uppercase;
-  display: inline-block;
-  min-width: 87px;
-  max-width: 100%;
-}
-.get-in-touch {
-  align-self: stretch;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: flex-start;
-  gap: var(--gap-base);
-  max-width: 100%;
-}
-.get-in-touch-desc p {
-  margin: 0;
-}
-.touch-circle {
-  height: 110px;
-  width: 295.3px;
-  position: absolute;
-  margin: 0 !important;
-  top: 11px;
-  right: 36.1px;
-}
-.audit-headline {
-  font-weight: 400;
-  margin: 0;
-  flex: 1;
-  position: relative;
-  font-size: inherit;
-  letter-spacing: -1.5px;
-  line-height: 110%;
-  display: inline-block;
-  max-width: 100%;
-  z-index: 1;
-  font-family: inherit;
-}
-.left-col-wrapper,
-.get-in-touch-head {
-  align-self: stretch;
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
-.get-in-touch-head {
-  flex-direction: row;
-  position: relative;
-  font-size: var(--h1-size);
-}
-.left-col-wrapper {
-  flex-direction: column;
-  gap: var(--gap-61xl);
-}
-.email-input {
-  align-self: stretch;
-  position: relative;
-  line-height: 140%;
-  line-height: 34px;
-}
-
-.pattern-matcher {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-2xs) 0 0;
-  box-sizing: border-box;
-  min-width: 340px;
-  max-width: 100%;
-}
-
-.icon20,
-.icon21 {
-  position: absolute;
-  top: 0;
-  left: 0;
-  border-radius: var(--br-21xl);
-  width: 24px;
-  height: 24px;
-  overflow: hidden;
-}
-.icon21 {
-  top: 4px;
-  left: 4px;
-  border-radius: var(--br-829xl);
-  background-color: var(--color-orangered);
-  width: 16px;
-  height: 16px;
-  z-index: 1;
-}
-.icon-parent7 {
-  height: 24px;
-  width: 24px;
-  position: relative;
-}
-.button9 {
-  width: 253px;
-  border-radius: var(--br-21xl);
-  background-color: var(--baseline-dark);
-  overflow: hidden;
-  flex-shrink: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-base) var(--padding-5xl);
-  box-sizing: border-box;
-  gap: var(--gap-base);
-  font-size: var(--button-size);
-  color: var(--baseline-white);
-}
-.get-in-touch-desc,
-.email-wrapper,
-.left-col {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start;
-  max-width: 100%;
-}
-.email-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  width: 100%;
-  max-width: 824px;
-  border-radius: 50px;
-  border: 1px solid var(--baseline-dark);
-  padding: 8px;
-}
-
-.email-input {
-  width: 523px;
-  border: none;
-  outline: none;
-  padding: 8px 16px;
-  font-size: 24px;
-  color: var(--baseline-dark);
-}
-.get-in-touch-desc,
-.left-col {
-  flex-direction: column;
-}
-.get-in-touch-desc {
-  align-self: stretch;
-  gap: var(--gap-45xl);
-  font-size: var(--h5-size);
-}
-.left-col {
-  flex: 1;
-  gap: var(--gap-161xl);
-  min-width: 536px;
-}
-.get-in-touch-img {
-  height: 800px;
-  width: 680px;
-  position: relative;
-  border-radius: var(--br-5xs);
-  overflow: hidden;
-  flex-shrink: 0;
-  object-fit: cover;
-  max-width: 100%;
-}
-.get-in-touch-container,
-.get-in-touch-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  box-sizing: border-box;
-  max-width: 100%;
-}
-.get-in-touch-wrapper {
-  width: 1680px;
-  border-radius: var(--br-5xs);
-  background-color: var(--baseline-white);
-  justify-content: flex-start;
-  padding: var(--padding-29xl);
-  gap: var(--gap-61xl);
-}
 .get-in-touch-container {
   background: var(--baseline-bg-alt);
   align-self: stretch;
@@ -204,4 +7,208 @@
   font-size: var(--font-size-base);
   color: var(--baseline-dark);
   font-family: var(--button);
+  .get-in-touch-wrapper {
+    width: 1680px;
+    border-radius: var(--br-5xs);
+    background-color: var(--baseline-white);
+    justify-content: flex-start;
+    padding: var(--padding-29xl);
+    gap: var(--gap-61xl);
+    .left-col {
+      flex: 1;
+      gap: var(--gap-161xl);
+      min-width: 536px;
+      .left-col-wrapper {
+        flex-direction: column;
+        gap: var(--gap-61xl);
+        .get-in-touch {
+          align-self: stretch;
+          display: flex;
+          flex-direction: row;
+          align-items: center;
+          justify-content: flex-start;
+          gap: var(--gap-base);
+          max-width: 100%;
+          .star-icon {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            justify-content: flex-start;
+            box-sizing: border-box;
+            width: 12px;
+            height: 12px;
+            position: relative;
+          }
+          p {
+            margin: 0;
+            flex: 1;
+            position: relative;
+            letter-spacing: 0.15px;
+            line-height: 140%;
+            text-transform: uppercase;
+            display: inline-block;
+            min-width: 87px;
+            max-width: 100%;
+          }
+        }
+        .get-in-touch-head {
+          flex-direction: row;
+          position: relative;
+          font-size: var(--h1-size);
+          .audit-headline {
+            font-weight: 400;
+            margin: 0;
+            flex: 1;
+            position: relative;
+            font-size: inherit;
+            letter-spacing: -1.5px;
+            line-height: 110%;
+            display: inline-block;
+            max-width: 100%;
+            z-index: 1;
+            font-family: inherit;
+          }
+          .touch-circle {
+            height: 110px;
+            width: 295.3px;
+            position: absolute;
+            margin: 0 !important;
+            top: 11px;
+            right: 36.1px;
+          }
+        }
+      }
+      .get-in-touch-desc {
+        align-self: stretch;
+        gap: var(--gap-45xl);
+        font-size: var(--h5-size);
+        .get-in-touch-desc p {
+          margin: 0;
+        }
+        .email-wrapper {
+          display: flex;
+          align-items: center;
+          justify-content: space-evenly;
+          width: 100%;
+          max-width: 824px;
+          border-radius: 50px;
+          border: 1px solid var(--baseline-dark);
+          padding: 8px;
+          .email-input {
+            align-self: stretch;
+            position: relative;
+            line-height: 140%;
+            line-height: 34px;
+            width: 523px;
+            border: none;
+            outline: none;
+            padding: 8px 16px;
+            font-size: 24px;
+            color: var(--baseline-dark);
+          }
+        }
+      }
+    }
+    .get-in-touch-img {
+      height: 800px;
+      width: 680px;
+      position: relative;
+      border-radius: var(--br-5xs);
+      overflow: hidden;
+      flex-shrink: 0;
+      object-fit: cover;
+      max-width: 100%;
+    }
+  }
+}
+
+.left-col-wrapper,
+.get-in-touch-head {
+  align-self: stretch;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.get-in-touch-desc,
+.email-wrapper,
+.left-col {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  max-width: 100%;
+}
+
+.get-in-touch-desc,
+.left-col {
+  flex-direction: column;
+}
+
+.get-in-touch-container,
+.get-in-touch-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+
+@media screen and (max-width: 450px) {
+  .get-in-touch-container {
+    width: 100%;
+    padding: 0 20px 0;
+    .get-in-touch-wrapper {
+      width: 100%;
+      padding: 20px;
+      flex-direction: column;
+      .left-col {
+        width: 100%;
+        gap: 0;
+        min-width: unset;
+        .left-col-wrapper {
+          width: 100%;
+          gap: 20px;
+          .get-in-touch {
+            width: 100%;
+            justify-content: center;
+            p {
+              flex: none;
+            }
+          }
+          .get-in-touch-head {
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            .audit-headline {
+              font-size: 40px;
+            }
+            .touch-circle {
+              width: 120px;
+              height: auto;
+              top: 5px;
+              right: 5px;
+            }
+          }
+        }
+        .get-in-touch-desc {
+          gap: 20px;
+          font-size: 18px;
+          margin-top: 15px;
+          .email-wrapper {
+            width: 95%;
+            .email-input {
+              width: 100%;
+              padding: 8px;
+              margin-left: 8px;
+              font-size: 12px;
+            }
+          }
+        }
+      }
+      .get-in-touch-img {
+        display: none;
+      }
+    }
+  }
 }

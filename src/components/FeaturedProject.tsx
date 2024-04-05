@@ -1,12 +1,16 @@
 import React from "react";
 import "./FeaturedProject.scss";
 
-const FeaturedProject: React.FC = (props) => {
+const FeaturedProject: React.FC = () => {
   return (
     <div className="featured-container">
       <div className="card-wrapper">
         <div className="card">
-          <img className="featured-banner" alt="" src="/hulo.dev-test-page/featured-banner.png" />
+          <img
+            className="featured-banner"
+            alt=""
+            src="/hulo.dev-test-page/featured-banner.png"
+          />
           <img
             className="feature-banner-pop"
             alt=""
@@ -32,9 +36,7 @@ const FeaturedProject: React.FC = (props) => {
             </div>
             <div className="featured-project">Featured Project</div>
           </div>
-          <div className="author">
-            <p>Kate Eckstein Design</p>
-          </div>
+          <div className="author">Kate Eckstein Design</div>
           <div className="categories">
             Strategy, content, Design, development
           </div>

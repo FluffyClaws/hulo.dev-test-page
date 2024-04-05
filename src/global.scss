@@ -10,9 +10,15 @@ h1,
 h3 {
   color: var(--baseline-dark);
 }
+@media (max-width: 450px) {
+  :root {
+    background: var(--baseline-white);
+  }
+}
 :root {
   /* fonts */
   --button: "Plus Jakarta Sans";
+  --mobile: 450px;
 
   /* font sizes */
   --h5-size: 24px;

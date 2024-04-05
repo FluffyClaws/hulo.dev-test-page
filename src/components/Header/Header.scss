@@ -1,11 +1,29 @@
-.logo {
-  position: relative;
-  letter-spacing: -1.5px;
-  line-height: 110%;
-  font-weight: 300;
-  white-space: nowrap;
-  font-style: italic;
-  cursor: pointer;
+.header {
+  align-self: stretch;
+  height: 80px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding: var(--padding-xs) var(--padding-xl);
+  box-sizing: border-box;
+  gap: var(--gap-xs);
+  max-width: 100%;
+  z-index: 2;
+  text-align: left;
+  font-size: var(--font-size-13xl);
+  color: var(--baseline-dark);
+  font-family: var(--button);
+  .header-group {
+    width: 1680px;
+    justify-content: space-between;
+    gap: var(--gap-xs);
+    max-width: 100%;
+    flex-wrap: wrap;
+  }
+  .hamburger-button {
+    display: none;
+  }
 }
 
 .logo-wrapper {
@@ -16,24 +34,15 @@
   justify-content: flex-start;
   padding: var(--padding-2xs) 0 0;
   box-sizing: border-box;
-}
-
-.nav-link {
-  position: relative;
-  letter-spacing: 0.15px;
-  line-height: 120%;
-  font-weight: 500;
-  display: inline-block;
-  white-space: nowrap;
-  cursor: pointer;
-}
-
-.nav-group {
-  display: flex;
-  flex-direction: row;
-  align-items: flex-start;
-  justify-content: flex-start;
-  gap: var(--gap-13xl);
+  .logo {
+    position: relative;
+    letter-spacing: -1.5px;
+    line-height: 110%;
+    font-weight: 300;
+    white-space: nowrap;
+    font-style: italic;
+    cursor: pointer;
+  }
 }
 
 .nav-wrapper,
@@ -43,17 +52,6 @@
   align-items: flex-start;
 }
 
-.nav-parent {
-  align-self: stretch;
-  flex-direction: row;
-  justify-content: space-between;
-  gap: var(--gap-xl);
-  text-align: left;
-  font-size: var(--h6-size);
-  color: var(--baseline-dark);
-  font-family: var(--button);
-}
-
 .nav-wrapper {
   width: 396px;
   flex-direction: column;
@@ -61,27 +59,25 @@
   padding: var(--padding-base) 0 0;
   box-sizing: border-box;
   max-width: 100%;
-}
-
-.instagram-icon {
-  width: 24px;
-  height: 24px;
-  position: relative;
-  overflow: hidden;
-  flex-shrink: 0;
-}
-
-.instagram-wrapper {
-  height: 40px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-  padding: var(--padding-base) 0 0;
-  box-sizing: border-box;
-  background: none;
-  border: none;
-  cursor: pointer;
+  .nav-parent {
+    align-self: stretch;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    text-align: left;
+    font-size: var(--h6-size);
+    color: var(--baseline-dark);
+    font-family: var(--button);
+  }
+  .nav-link {
+    position: relative;
+    letter-spacing: 0.15px;
+    line-height: 120%;
+    font-weight: 500;
+    display: inline-block;
+    white-space: nowrap;
+    cursor: pointer;
+  }
 }
 
 .contact-container,
@@ -99,34 +95,173 @@
   background: none;
   border: none;
   cursor: pointer;
-}
-
-.header-group {
-  width: 1680px;
-  justify-content: space-between;
-  gap: var(--gap-xl);
-  max-width: 100%;
+  .instagram-wrapper {
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    padding: var(--padding-base) 0 0;
+    box-sizing: border-box;
+    background: none;
+    border: none;
+    cursor: pointer;
+    .instagram-icon {
+      width: 24px;
+      height: 24px;
+      position: relative;
+      overflow: hidden;
+      flex-shrink: 0;
+    }
+  }
 }
 
 .br-line {
+  order: 2;
   width: 1680px;
   border-bottom: 1px solid var(--baseline-dark);
 }
 
-.header {
-  align-self: stretch;
-  height: 80px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: flex-start;
-  padding: var(--padding-xs) var(--padding-xl);
-  box-sizing: border-box;
-  gap: var(--gap-xs);
-  max-width: 100%;
-  z-index: 2;
-  text-align: left;
-  font-size: var(--font-size-13xl);
-  color: var(--baseline-dark);
-  font-family: var(--button);
+@media (max-width: 450px) {
+  //menu animation
+  @keyframes slideDown {
+    0% {
+      max-height: 0;
+      display: none;
+    }
+    1% {
+      display: flex;
+    }
+    100% {
+      max-height: 250px;
+    }
+  }
+
+  @keyframes slideUp {
+    0% {
+      max-height: 250px;
+    }
+    99% {
+      display: flex;
+    }
+    100% {
+      max-height: 0;
+      display: none;
+    }
+  }
+
+  .br-line {
+    width: 100%;
+  }
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+
+    .hamburger-button {
+      margin: var(--padding-2xs) 0 0;
+      padding: 0;
+      display: block;
+      background: none;
+      border: none;
+      position: absolute;
+      z-index: 11;
+      img {
+        width: 35px;
+        height: 35px;
+        transform: rotate(90deg);
+        transition: transform 0.3s ease;
+      }
+      &.rotated img {
+        transform: rotate(180deg);
+        transition: transform 0.3s ease;
+      }
+    }
+    .logo-wrapper {
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding-bottom: var(--padding-2xs);
+      .logo {
+        padding-left: 28px;
+      }
+    }
+    .header-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      transition: gap 0.5s ease;
+      z-index: 10;
+      background-color: var(--baseline-white);
+    }
+    .header-group:not(.mobile-menu-visible) {
+      transition: gap 0.5s ease;
+      gap: 0;
+    }
+    .nav-wrapper {
+      padding: 0;
+    }
+    .nav-wrapper,
+    .contact-container {
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.5s ease;
+      animation-fill-mode: forwards;
+    }
+
+    .nav-wrapper.closed,
+    .contact-container.closed {
+      animation: slideUp 0.5s ease;
+    }
+
+    .mobile-menu-visible .nav-wrapper,
+    .mobile-menu-visible .contact-container {
+      height: 250px;
+      max-height: 250px;
+      display: flex;
+      align-items: flex-end;
+    }
+    .mobile-menu-visible .contact-container {
+      height: 60px;
+    }
+    .nav-parent {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .nav-link {
+      display: block;
+      width: 100%;
+      text-align: start;
+      padding: 10px;
+    }
+    .contact-container {
+      flex-direction: row;
+      align-items: center;
+      width: 100%;
+      .chat-button {
+        width: 100%;
+        max-width: 150px;
+      }
+      .instagram-wrapper {
+        order: 2;
+        height: auto;
+        padding: 0;
+        .instagram-icon {
+          width: 50px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  .menu-content {
+    background-color: var(--baseline-white);
+  }
 }

@@ -23,6 +23,21 @@ const Testimonials = () => {
     afterChange: (index: number) => {
       console.log("Slider Changed to: ", index);
     },
+    cssEase: "linear",
+    responsive: [
+      {
+        breakpoint: 450,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+          autoplay: true,
+          autoplaySpeed: 3500,
+          pauseOnFocus: true,
+          cssEase: "linear",
+        },
+      },
+    ],
   };
 
   const isOffFrameSlide = (index: number) => index === (currentSlide + 1) % 2;
@@ -49,7 +64,9 @@ const Testimonials = () => {
               }}
             >
               <TestemonialCard
-                authorPicSrc={`/frame-86${index % 2 === 0 ? "" : "-1"}@2x.png`}
+                authorPicSrc={`/hulo.dev-test-page/frame-86${
+                  index % 2 === 0 ? "" : "-1"
+                }@2x.png`}
                 authorName={`– ${
                   index % 2 === 0
                     ? "Luna, Luna’s Asethetics"

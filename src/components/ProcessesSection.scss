@@ -1,23 +1,44 @@
-.star {
-  width: 12px;
-  height: 12px;
-  position: relative;
-}
-
-.our-process {
-  position: relative;
-  letter-spacing: 0.15px;
-  line-height: 140%;
-  text-transform: uppercase;
-  display: inline-block;
-  min-width: 118px;
-}
-.categorie-wrapper {
-  display: flex;
-  flex-direction: row;
-  align-items: baseline;
-  justify-content: flex-start;
-  gap: var(--gap-base);
+.processes-section {
+  align-self: stretch;
+  justify-content: center;
+  padding: var(--padding-101xl) var(--padding-xl) var(--padding-101xl);
+  box-sizing: border-box;
+  text-align: left;
+  font-size: var(--font-size-base);
+  color: var(--baseline-dark);
+  font-family: var(--button);
+  background: var(--baseline-bg-alt);
+  .processes-container {
+    width: 1680px;
+    justify-content: space-between;
+    gap: var(--gap-xl);
+    .categorie-wrapper {
+      display: flex;
+      flex-direction: row;
+      align-items: baseline;
+      justify-content: flex-start;
+      gap: var(--gap-base);
+      .star {
+        width: 12px;
+        height: 12px;
+        position: relative;
+      }
+      p {
+        margin: 0;
+        position: relative;
+        letter-spacing: 0.15px;
+        line-height: 140%;
+        text-transform: uppercase;
+        display: inline-block;
+        min-width: 118px;
+      }
+    }
+    .processes-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: var(--gap-45xl);
+    }
+  }
 }
 
 .processes-section,
@@ -31,24 +52,19 @@
 .processes-container {
   flex-direction: row;
 }
-.processes-container {
-  width: 1680px;
-  justify-content: space-between;
-  gap: var(--gap-xl);
-}
-.processes-section {
-  align-self: stretch;
-  justify-content: center;
-  padding: var(--padding-101xl) var(--padding-xl) var(--padding-101xl);
-  box-sizing: border-box;
-  text-align: left;
-  font-size: var(--font-size-base);
-  color: var(--baseline-dark);
-  font-family: var(--button);
-  background: var(--baseline-bg-alt);
-}
-.processes-cards-wrapper {
-  display: flex;
-  flex-direction: column;
-  gap: var(--gap-45xl);
+
+@media screen and (max-width: 450px) {
+  .processes-section {
+    padding: 55px 0;
+    .processes-container {
+      padding: 0;
+      width: 100%;
+      flex-direction: column;
+      align-items: center;
+      .processes-wrapper {
+        width: 100%;
+        gap: 32px;
+      }
+    }
+  }
 }

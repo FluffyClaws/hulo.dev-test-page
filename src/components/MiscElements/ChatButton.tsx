@@ -32,7 +32,7 @@ const ChatButton: React.FC<ChatButtonProps> = ({
             className={`icon ${effectiveHover ? "icon-hovered" : ""}`}
             loading="lazy"
             alt=""
-            src={effectiveHover ? "/arrow-icon.png" : "/circle.svg"}
+            src={effectiveHover ? '/hulo.dev-test-page/arrow-icon.png' : '/hulo.dev-test-page/circle.svg'}
           />
         </div>
         <div className={`icon1 ${effectiveHover ? "hovered" : ""}`} />

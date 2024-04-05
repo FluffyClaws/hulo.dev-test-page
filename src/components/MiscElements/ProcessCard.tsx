@@ -16,7 +16,6 @@ const ProcessCard: React.FC<ProcessProps> = ({
   description,
 }) => {
   const [isCollapsed, setIsCollapsed] = useState(false);
-
   const [isRotated, setIsRotated] = useState(false);
 
   const toggleCollapse = () => {

@@ -13,13 +13,6 @@ function App() {
   return (
     <div className="container">
       <Home />
-      {/* <HeaderMenu />
-      <HeaderBanner />
-      <FeaturedProject />
-      <AboutSection />
-      <HowWeWork />
-      <CardsSection />
-      <ProcessesSection /> */}
     </div>
   );
 }

@@ -7,10 +7,15 @@ const ProcessesSection = () => {
     <section className="processes-section">
       <div className="processes-container">
         <div className="categorie-wrapper">
-          <img className="star" loading="lazy" alt="" src="/hulo.dev-test-page/star-2.svg" />
-          <div className="our-process">OUR PROCESS</div>
+          <img
+            className="star"
+            loading="lazy"
+            alt=""
+            src="/hulo.dev-test-page/star-2.svg"
+          />
+          <p>OUR PROCESS</p>
         </div>
-        <div className="processes-cards-wrapper">
+        <div className="processes-wrapper">
           <ProcessCard
             cardNumber="01"
             headline="strategic PLANNING"

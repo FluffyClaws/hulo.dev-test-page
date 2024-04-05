@@ -15,7 +15,11 @@ const Highlights = () => {
         <div className="highlight-head-wrapper">
           <div className="headline-wrapper">
             <div className="category-wrapper">
-              <img className="star-icon" alt="" src="/hulo.dev-test-page/star-1.svg" />
+              <img
+                className="star-icon"
+                alt=""
+                src="/hulo.dev-test-page/star-1.svg"
+              />
               <p>SELECTED WORK</p>
             </div>
             <h1>Sit nam egestas nullam nulla. Sed nisi arcu et blandit.</h1>
@@ -67,7 +71,7 @@ const Highlights = () => {
             subtitle="Luneer MGMT"
             imgHeight="425px"
             imgWidth=" 396px"
-          />{" "}
+          />
           <HighlightsCard
             imgSrc="/hulo.dev-test-page/img-9@2x.png"
             title="Strategy"

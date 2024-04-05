@@ -36,13 +36,11 @@ const CardComponent: React.FC<CardProps> = ({
           <img className="bg-img" src={bgImgSrc} loading="lazy" alt={title} />
         </div>
       </div>
-      <div className="button-wrapper">
-        <ChatButton
-          buttonText="tell me more"
-          width="165px"
-          parentHover={isHovered}
-        />
-      </div>
+      <ChatButton
+        buttonText="tell me more"
+        width="165px"
+        parentHover={isHovered}
+      />
     </div>
   );
 };
