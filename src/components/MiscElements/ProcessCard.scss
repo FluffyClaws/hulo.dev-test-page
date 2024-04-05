@@ -8,7 +8,7 @@
   border-bottom: 1px solid var(--baseline-dark);
   .process-card-wrapper {
     align-self: stretch;
-    border-bottom: 1px solid var(--baseline-darck);
+    border-bottom: 1px solid var(--baseline-dark);
     box-sizing: border-box;
     flex-direction: row;
     justify-content: flex-start;
@@ -27,7 +27,7 @@
       gap: var(--gap-13xl);
       min-width: 577px;
       max-width: 100%;
-      color: var(--baseline-darck);
+      color: var(--baseline-dark);
 
       .content-headline {
         align-self: stretch;
