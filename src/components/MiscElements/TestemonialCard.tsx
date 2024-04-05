@@ -19,7 +19,7 @@ const TestemonialCard: React.FC<TestiomonialCardProps> = ({
         alt=""
         src="/hulo.dev-test-page/group-3.svg"
       />
-      <h1 className="testimonial-text">{testimonialText}</h1>
+      <h1>{testimonialText}</h1>
       <div className="testimonial-author">
         <img
           className="testimonial-author-pic"
@@ -27,7 +27,7 @@ const TestemonialCard: React.FC<TestiomonialCardProps> = ({
           alt=""
           src={authorPicSrc}
         />
-        <h3 className="testimonial-author-name">{authorName}</h3>
+        <h3>{authorName}</h3>
       </div>
     </div>
   );

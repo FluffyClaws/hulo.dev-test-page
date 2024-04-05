@@ -11,6 +11,59 @@
   font-size: var(--h1-size);
   color: var(--baseline-darck);
   font-family: var(--button);
+  .testimonial-card-bg {
+    width: 11.48%;
+    height: 12.36%;
+    position: absolute;
+    margin: 0 !important;
+    top: -3.71%;
+    right: 88.96%;
+    left: -0.44%;
+    max-width: 100%;
+    max-height: 100%;
+    z-index: 1;
+  }
+  h1 {
+    margin: 0;
+    align-self: stretch;
+    position: relative;
+    font-size: inherit;
+    letter-spacing: -1.5px;
+    line-height: 110%;
+    font-weight: 400;
+    font-family: inherit;
+    z-index: 1;
+  }
+  .testimonial-author {
+    align-self: stretch;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: var(--gap-13xl);
+    font-size: var(--h4-size);
+    .testimonial-author-pic {
+      height: 120px;
+      width: 80px;
+      position: relative;
+      border-radius: var(--br-45xl);
+      overflow: hidden;
+      flex-shrink: 0;
+      object-fit: cover;
+    }
+    h3 {
+      margin: 0;
+      flex: 1 1;
+      position: relative;
+      font-size: inherit;
+      letter-spacing: 0.25px;
+      line-height: 41px;
+      font-weight: 400;
+      font-family: inherit;
+      display: inline-block;
+      min-width: 320px;
+      max-width: 100%;
+    }
+  }
 }
 .testimonial-card-wrapper,
 .testimonial-author {
@@ -18,56 +71,24 @@
   justify-content: flex-start;
   max-width: 100%;
 }
-.testimonial-author {
-  align-self: stretch;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: var(--gap-13xl);
-  font-size: var(--h4-size);
-}
-.testimonial-card-bg {
-  width: 11.48%;
-  height: 12.36%;
-  position: absolute;
-  margin: 0 !important;
-  top: -3.71%;
-  right: 88.96%;
-  left: -0.44%;
-  max-width: 100%;
-  max-height: 100%;
-  z-index: 1;
-}
-.testimonial-text {
-  margin: 0;
-  align-self: stretch;
-  position: relative;
-  font-size: inherit;
-  letter-spacing: -1.5px;
-  line-height: 110%;
-  font-weight: 400;
-  font-family: inherit;
-  z-index: 1;
-}
-.testimonial-author-pic {
-  height: 120px;
-  width: 80px;
-  position: relative;
-  border-radius: var(--br-45xl);
-  overflow: hidden;
-  flex-shrink: 0;
-  object-fit: cover;
-}
-.testimonial-author-name {
-  margin: 0;
-  flex: 1 1;
-  position: relative;
-  font-size: inherit;
-  letter-spacing: 0.25px;
-  line-height: 41px;
-  font-weight: 400;
-  font-family: inherit;
-  display: inline-block;
-  min-width: 320px;
-  max-width: 100%;
+
+@media screen and (max-width: 450px) {
+  .testimonial-card-wrapper {
+    width: 100%;
+    gap: 24px;
+    h1 {
+      font-size: 30px;
+    }
+    .testimonial-author {
+      width: 100%;
+      gap: 16px;
+      .testimonial-author-pic {
+        height: 100px;
+        width: auto;
+      }
+      h3 {
+        font-size: 20px;
+      }
+    }
+  }
 }
